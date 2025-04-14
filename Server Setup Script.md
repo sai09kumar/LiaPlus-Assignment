@@ -5,7 +5,7 @@ This script sets up a basic Python Flask server on a Linux machine.
 ```bash
 #!/bin/bash
 
-echo "🔧 Starting server setup..."
+echo " Starting server setup..."
 
 # Update & upgrade
 sudo apt update && sudo apt upgrade -y
