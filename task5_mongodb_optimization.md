@@ -1,7 +1,7 @@
 
 # Task 5: Database & Storage Optimization (MongoDB)
 
-## ✅ Optimization Techniques
+##  Optimization Techniques
 
 ### 1. Indexing
 MongoDB supports various types of indexes like **single field**, **compound**, and **text indexes**. Indexing improves read/query performance significantly.
@@ -43,14 +43,14 @@ sh.shardCollection("ecommerce.orders", { customer_id: "hashed" })
 
 ---
 
-## 📈 Query Example: Before vs After Optimization
+##  Query Example: Before vs After Optimization
 
 **Collection:** `products`  
 **Use Case:** Frequently filter by `category` and `price`
 
 ---
 
-### 🔍 Before Optimization
+###  Before Optimization
 
 ```js
 db.products.find({ category: "electronics", price: { $lt: 500 } })
@@ -61,7 +61,7 @@ db.products.find({ category: "electronics", price: { $lt: 500 } })
 
 ---
 
-### ⚙️ Optimization Applied
+###  Optimization Applied
 
 ```js
 db.products.createIndex({ category: 1, price: 1 })
@@ -69,7 +69,7 @@ db.products.createIndex({ category: 1, price: 1 })
 
 ---
 
-### ⚡ After Optimization
+###  After Optimization
 
 ```js
 db.products.find({ category: "electronics", price: { $lt: 500 } })
