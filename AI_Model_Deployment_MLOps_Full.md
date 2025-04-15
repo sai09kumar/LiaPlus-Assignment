@@ -91,7 +91,7 @@ joblib
 
 ---
 
-## ☸ Kubernetes YAML Files
+##  Kubernetes YAML Files
 
 ### `deployment.yaml`
 
