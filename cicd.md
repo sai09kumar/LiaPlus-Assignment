@@ -71,6 +71,7 @@ Use `credentials()` in Jenkinsfile to load these securely.
 
 ---
 
+![WhatsApp Image 2025-04-15 at 17 23 06_b983a3ab](https://github.com/user-attachments/assets/0f8ff5b1-27db-4436-803c-cc818769a7b0)
 
 
 ## 3. Azure Configurations Used
