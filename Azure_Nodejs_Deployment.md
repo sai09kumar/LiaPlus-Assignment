@@ -1,27 +1,17 @@
-# 🚀 Deploying a Node.js Web App to Azure App Service
+#  Deploying a Node.js Web App to Azure App Service
 
 ---
 
-## 1. 🗺 Architecture Diagram
+## 1.  Architecture Diagram
 
-```plaintext
-[User Browser]
-      |
-      v
-[Public URL - Azure App Service]
-      |
-      v
-[Node.js Web App]
-      |
-      v
-[Azure Resource Group & App Service Plan]
-```
+![WhatsApp Image 2025-04-15 at 16 50 37_9ffe0f98](https://github.com/user-attachments/assets/fb9e6ef7-c83c-42b0-8a59-87a2a6b75e39)
+
 
 ---
 
-## 2. 🧰 Steps to Deploy the Application
+## 2.  Steps to Deploy the Application
 
-### 🔧 Prerequisites
+###  Prerequisites
 
 - Azure account
 - Node.js and npm installed
@@ -29,7 +19,7 @@
 
 ---
 
-### 💻 Step-by-Step Instructions
+###  Step-by-Step Instructions
 
 #### 1. Create a Simple Node.js App
 
@@ -108,16 +98,20 @@ Open: `https://<your-app-name>.azurewebsites.net`
 
 ## 4. 📸 Screenshots to Include
 
-- ✅ Web page showing “Hello from Azure!”
-- ✅ Azure Portal > Resource Group view
-- ✅ Azure App Service configuration page
-- ✅ Git push success terminal output
+- ![WhatsApp Image 2025-04-13 at 20 27 54_b830c999](https://github.com/user-attachments/assets/c711bb3d-f4d7-4a55-8777-50db583027fa)
 
-> 💡 You can insert screenshots in this markdown like below:
+- ![WhatsApp Image 2025-04-13 at 20 28 18_32bb77b1](https://github.com/user-attachments/assets/e71cb7ce-66f1-43cc-9eb8-c4e764a7ad1a)
 
-```markdown
-![Hello Page](./screenshots/hello-from-azure.png)
-![Resource Group](./screenshots/resource-group.png)
-![App Config](./screenshots/app-config.png)
-![Git Push](./screenshots/git-push-success.png)
+- ![WhatsApp Image 2025-04-13 at 20 48 59_7128f91b](https://github.com/user-attachments/assets/8a4af911-d67a-4f7f-9df5-f7496e02141e)
+
+- ![WhatsApp Image 2025-04-13 at 20 49 44_293aac54](https://github.com/user-attachments/assets/5b9e416d-ffbe-4030-8dde-d16b3e6e7426)
+  
+- ![WhatsApp Image 2025-04-13 at 21 01 01_257a407d](https://github.com/user-attachments/assets/5a5d2296-0aae-4760-b7dc-93467ee6e422)
+
+- ![WhatsApp Image 2025-04-13 at 21 12 07_3034f3f6](https://github.com/user-attachments/assets/ed2349c1-a2ce-487f-8cf3-76a5907fe799)
+
+
+
+
+
 ```
