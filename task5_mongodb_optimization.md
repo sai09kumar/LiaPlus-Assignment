@@ -81,6 +81,6 @@ db.products.find({ category: "electronics", price: { $lt: 500 } })
 
 ---
 
-## 🛡️ Conclusion
+##  Conclusion
 
 Optimizing MongoDB with indexes, efficient queries, and sharding ensures high performance, scalability, and reduced latency, especially for large datasets or high-traffic applications.
