@@ -1,5 +1,5 @@
 
-# CI/CD Pipeline with Azure Deployment for Node.js App 🚀
+# CI/CD Pipeline with Jenkins & Azure Deployment for Node.js App 
 
 ## 1. Node.js Web Application
 
@@ -42,59 +42,37 @@ git commit -m "Initial commit"
 
 ---
 
-## 2. CI/CD Pipeline Implementation
+## 2. CI/CD Pipeline Using Jenkins
 
-### CI/CD Using GitHub Actions
+### Jenkinsfile
 
-Create a workflow file: `.github/workflows/deploy.yml`
+A `Jenkinsfile` is used to define the pipeline:
 
-```yaml
-name: Node.js CI/CD
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run tests (if any)
-        run: echo "No tests defined"
-
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: .
+```groovy
+<see separate Jenkinsfile>
 ```
 
 ### Pipeline Stages Explained
 
-- **Build**: Installs dependencies.
-- **Test**: Placeholder stage to run any defined tests.
-- **Deploy**: Uses Azure Web Apps GitHub Action for deployment.
+- **Checkout**: Pulls source code from Git.
+- **Install Dependencies**: Runs `npm install`.
+- **Build**: No build step needed here.
+- **Test**: Placeholder for future test commands.
+- **Deploy**: Deploys app to Azure via ZIP Deploy.
 
 ### Secrets Management
 
-- Use GitHub Repository Secrets:
-  - `AZURE_WEBAPP_NAME`: Your App Service name.
-  - `AZURE_WEBAPP_PUBLISH_PROFILE`: Export from Azure portal (App Service > Get Publish Profile).
+Use Jenkins **Credentials** to store:
+
+- `azure-app-name`: Your App Service name.
+- `azure-publish-profile`: Base64 string or XML contents of the Azure publish profile.
+
+Use `credentials()` in Jenkinsfile to load these securely.
 
 ---
+
+![Uploading img2.png…]()
+
 
 ## 3. Azure Configurations Used
 
@@ -105,9 +83,7 @@ jobs:
 
 ---
 
-## 4. Deployment Steps
-
-### Azure CLI Deployment
+## 4. Azure Deployment via CLI
 
 ```bash
 az group create --name azure-node-rg --location eastus
