@@ -85,7 +85,7 @@ Open: `https://<your-app-name>.azurewebsites.net`
 
 ---
 
-## 3. ⚙️ Azure Configurations Used
+## 3. ⚙ Azure Configurations Used
 
 | Configuration     | Value               |
 |-------------------|---------------------|
@@ -96,7 +96,7 @@ Open: `https://<your-app-name>.azurewebsites.net`
 
 ---
 
-## 4. 📸 Screenshots to Include
+## 4.  Screenshots to Include
 
 - ![WhatsApp Image 2025-04-13 at 20 27 54_b830c999](https://github.com/user-attachments/assets/c711bb3d-f4d7-4a55-8777-50db583027fa)
 
