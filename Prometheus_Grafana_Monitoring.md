@@ -188,8 +188,8 @@ Insert screenshots showing:
 
 ---
 
-## 📦 Outcome
+##  Outcome
 
-✅ Full monitoring setup for custom Node.js app  
-✅ Application metrics visualized in Grafana  
-✅ Prometheus alerting integrated  
+Full monitoring setup for custom Node.js app  
+Application metrics visualized in Grafana  
+Prometheus alerting integrated  
