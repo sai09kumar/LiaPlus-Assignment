@@ -19,7 +19,7 @@ This guide explains how to protect your business applications in the cloud using
 
 ---
 
-## 🚨 Disaster Recovery Strategy
+##  Disaster Recovery Strategy
 
 ### 1. Risk Assessment
 
@@ -139,22 +139,22 @@ To configure long-term retention:
 
 ---
 
-## 📊 Monitoring Backup Status
+##  Monitoring Backup Status
 
 - Go to Recovery Services vault → Check "Backup Jobs"
 - Set alerts for failed/incomplete jobs
 
-🖼️ **Insert Screenshot of Backup Jobs & Alert Configuration**
+ **Insert Screenshot of Backup Jobs & Alert Configuration**
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 A solid disaster recovery plan helps ensure:
 - Minimal downtime (RTO)
 - Minimal data loss (RPO)
 
-📝 Key Reminders:
+ Key Reminders:
 - Know your RTO/RPO
 - Test recovery often
 - Keep documentation updated
@@ -162,4 +162,4 @@ A solid disaster recovery plan helps ensure:
 
 By leveraging Azure Backup & DR tools, your business can bounce back from disasters with confidence.
 
-🖼️ **Insert Summary Diagram or Flowchart Here**
+ **Insert Summary Diagram or Flowchart Here**
