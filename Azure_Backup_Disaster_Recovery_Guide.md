@@ -1,12 +1,12 @@
 
-# ✅ Azure Backup & Disaster Recovery Guide
+#  Azure Backup & Disaster Recovery Guide
 
-## 📘 Introduction
+##  Introduction
 This guide explains how to protect your business applications in the cloud using Azure backup and disaster recovery tools. We'll keep things simple and focus on practical steps you can take.
 
 ---
 
-## 🧠 What are RTO and RPO?
+##  What are RTO and RPO?
 
 - **Recovery Time Objective (RTO)**: The maximum acceptable time it should take to restore your systems after a disaster.  
   *Example:* “We need to be back online within 4 hours.”
@@ -14,7 +14,8 @@ This guide explains how to protect your business applications in the cloud using
 - **Recovery Point Objective (RPO)**: The maximum acceptable amount of data loss measured in time.  
   *Example:* “We can't lose more than 1 hour of data.”
 
-🖼️ **Insert Diagram/Chart for RTO vs RPO Here**
+![image](https://github.com/user-attachments/assets/f3856359-e5f0-4be3-be76-33149d3f6f2d)
+
 
 ---
 
