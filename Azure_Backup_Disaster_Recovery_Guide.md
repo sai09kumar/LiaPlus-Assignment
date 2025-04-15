@@ -119,7 +119,7 @@ Start by listing what could go wrong:
 #### 🔹 Select VMs to Back Up:
 1. Check VMs to back up → Click "Enable backup"
 
-💡 Backups will now run automatically based on policy.
+ Backups will now run automatically based on policy.
 
 ---
 
@@ -144,7 +144,8 @@ To configure long-term retention:
 - Go to Recovery Services vault → Check "Backup Jobs"
 - Set alerts for failed/incomplete jobs
 
- **Insert Screenshot of Backup Jobs & Alert Configuration**
+ ![image](https://github.com/user-attachments/assets/b4f951f1-ca21-4749-a508-ba93beea3556)
+
 
 ---
 
@@ -162,4 +163,5 @@ A solid disaster recovery plan helps ensure:
 
 By leveraging Azure Backup & DR tools, your business can bounce back from disasters with confidence.
 
- **Insert Summary Diagram or Flowchart Here**
+ ![image](https://github.com/user-attachments/assets/4f4a4253-5924-4788-9b4a-55c4e235f0f4)
+
