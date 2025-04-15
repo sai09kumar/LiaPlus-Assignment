@@ -1,11 +1,11 @@
-# 🧠 AI Model Deployment & MLOps Assignment
+#  AI Model Deployment & MLOps Assignment
 
-## 🚀 Task Overview
+##  Task Overview
 **Goal:** Deploy a sample AI model using Docker & Kubernetes and expose it via an API endpoint.
 
 ---
 
-## 📦 Dockerfile
+##  Dockerfile
 
 ```Dockerfile
 # Use Python base image
@@ -30,7 +30,7 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ---
 
-## 🐍 Python Files
+##  Python Files
 
 ### `app.py` — API Code
 
@@ -80,7 +80,7 @@ joblib.dump(model, "model.joblib")
 
 ---
 
-## 📄 requirements.txt
+##  requirements.txt
 
 ```txt
 fastapi
@@ -91,7 +91,7 @@ joblib
 
 ---
 
-## ☸️ Kubernetes YAML Files
+## ☸ Kubernetes YAML Files
 
 ### `deployment.yaml`
 
@@ -136,7 +136,7 @@ spec:
 
 ---
 
-## ⚙️ Deployment Steps
+## ⚙ Deployment Steps
 
 1. **Train the model**
    ```bash
@@ -165,20 +165,43 @@ spec:
    kubectl get svc
    ```
 
+6. **Test Via Powershell**
+   ```bash
+   $body = @{
+    feature1 = 1.0
+    feature2 = 1.0
+   } | ConvertTo-Json
+
+   Invoke-RestMethod -Uri http://127.0.0.1:53081/predict -Method Post -Body $body -ContentType "application/json"
+    ```
+
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
-> 🖼 Add a screenshot showing the service is running on Kubernetes and accessible.
+> ![WhatsApp Image 2025-04-15 at 15 35 02_c71e0962](https://github.com/user-attachments/assets/7ace71a1-b737-4965-aecd-25a399e3d369)
 
-![Screenshot Placeholder](./path-to-your-screenshot.png)
+
+![WhatsApp Image 2025-04-15 at 15 35 35_2d42a7bd](https://github.com/user-attachments/assets/bdc10b47-7afe-41ba-abd3-87b0be553831)
+
+
+![WhatsApp Image 2025-04-15 at 15 36 06_218eb129](https://github.com/user-attachments/assets/5a51626a-0ce3-4f20-8add-11a8a77af163)
+
+![WhatsApp Image 2025-04-15 at 15 42 32_c04d29a8](https://github.com/user-attachments/assets/a9328621-2c92-48e1-8ccc-74d4aa6eecc2)
+
+![WhatsApp Image 2025-04-15 at 15 43 14_451dadcd](https://github.com/user-attachments/assets/3d98eeed-b892-41ca-8279-170e6d7842a9)
+
+
+
+
+
 
 ---
 
-## ✅ Deliverables Recap
+##  Deliverables
 
-- [x] Dockerfile ✅
-- [x] Kubernetes YAML files ✅
-- [x] Deployment steps ✅
-- [x] FastAPI + Model code ✅
-- [ ] Screenshot of model running on Kubernetes ⬜
+- [x] Dockerfile 
+- [x] Kubernetes YAML files 
+- [x] Deployment steps 
+- [x] FastAPI + Model code 
+- [ ] Screenshot of model running on Kubernetes 
