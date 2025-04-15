@@ -1,20 +1,20 @@
-# 📊 Monitoring & Logging Setup with Prometheus & Grafana
+#  Monitoring & Logging Setup with Prometheus & Grafana
 
 This guide helps you set up a complete monitoring stack using **Prometheus** and **Grafana** to track application performance and errors.
 
 ---
 
-## ✅ Deliverables
+##  Deliverables
 
-- ✅ Steps to configure monitoring/logging tools
-- ✅ Dashboard screenshots showing application metrics
-- ✅ Alert setup for critical issues
+-  Steps to configure monitoring/logging tools
+-  Dashboard screenshots showing application metrics
+-  Alert setup for critical issues
 
 ---
 
-## 🧱 Step 1: Create a Sample Node.js Application with Prometheus Metrics
+##  Step 1: Create a Sample Node.js Application with Prometheus Metrics
 
-### 📁 Folder Structure
+###  Folder Structure
 
 ```
 devops-monitoring/
@@ -28,7 +28,7 @@ devops-monitoring/
     └── package.json
 ```
 
-### 📄 `package.json`
+###  `package.json`
 
 ```json
 {
@@ -45,7 +45,7 @@ devops-monitoring/
 }
 ```
 
-### 📄 `index.js`
+###  `index.js`
 
 ```javascript
 const express = require('express');
@@ -80,7 +80,7 @@ app.listen(port, () => {
 });
 ```
 
-### 📄 `Dockerfile`
+###  `Dockerfile`
 
 ```Dockerfile
 FROM node:18
@@ -99,9 +99,9 @@ CMD ["npm", "start"]
 
 ---
 
-## 🧰 Step 2: Update Docker Compose and Prometheus Config
+##  Step 2: Update Docker Compose and Prometheus Config
 
-### 📄 `docker-compose.yml`
+### `docker-compose.yml`
 
 Add this under services:
 
@@ -112,7 +112,7 @@ Add this under services:
       - "8080:8080"
 ```
 
-### 📄 `prometheus.yml`
+###  `prometheus.yml`
 
 ```yaml
 global:
@@ -134,7 +134,7 @@ scrape_configs:
 
 ---
 
-## ▶️ Step 3: Run the Stack
+## ▶ Step 3: Run the Stack
 
 ```bash
 docker-compose down
@@ -148,7 +148,7 @@ docker-compose up --build -d
 
 ---
 
-## 📈 Step 4: Grafana Dashboard & Alerts
+##  Step 4: Grafana Dashboard & Alerts
 
 - Add Prometheus as a data source in Grafana
 - Create a dashboard panel using the metric: `http_requests_total`
@@ -159,7 +159,7 @@ docker-compose up --build -d
 
 ---
 
-## 🖼 Screenshots to Include
+##  Screenshots to Include
 
 Insert screenshots showing:
 - Sample app running
@@ -168,13 +168,23 @@ Insert screenshots showing:
 - Grafana dashboard with charts
 - Alert rule config and alerting output
 
-```markdown
-![App Running](./screenshots/app-homepage.png)
-![Metrics](./screenshots/app-metrics.png)
-![Prometheus Job](./screenshots/prometheus-app-job.png)
-![Grafana Chart](./screenshots/grafana-app-dashboard.png)
-![Alert Rule](./screenshots/alert-setup.png)
-```
+![WhatsApp Image 2025-04-14 at 12 34 07_ab3582df](https://github.com/user-attachments/assets/376f07e6-ff03-4d60-9996-8a9fa6032521)
+
+![WhatsApp Image 2025-04-14 at 12 02 57_43e0716c](https://github.com/user-attachments/assets/425772b0-a0ba-491a-a570-6b91def7475a)
+
+![WhatsApp Image 2025-04-14 at 12 04 41_71805f54](https://github.com/user-attachments/assets/42982c9f-0dda-4b54-9435-12391027cc75)
+
+![WhatsApp Image 2025-04-14 at 12 05 36_4a20f604](https://github.com/user-attachments/assets/613838f6-193d-40cc-9a5d-bf2daf23d7a8)
+
+![WhatsApp Image 2025-04-14 at 12 11 00_d1e6267a](https://github.com/user-attachments/assets/f034bcf8-8eb6-4cd0-a6dc-aaa0673c72dd)
+
+![WhatsApp Image 2025-04-14 at 12 29 32_7ab93081](https://github.com/user-attachments/assets/fa0055ef-0d75-4353-8f1e-e912d720eff3)
+
+
+
+
+
+
 
 ---
 
