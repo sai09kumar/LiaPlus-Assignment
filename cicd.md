@@ -71,7 +71,6 @@ Use `credentials()` in Jenkinsfile to load these securely.
 
 ---
 
-![Uploading img2.png…]()
 
 
 ## 3. Azure Configurations Used
